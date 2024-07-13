@@ -7,14 +7,14 @@ namespace FeatureModule
 	// 
 	// Additional, make sure to import the exampleJsInteropFeatureModule.js file into the Main Shell project's index.html file.
 
-	public class ExampleJsInteropFeatureModule : IAsyncDisposable
+	public class ExampleJsInterop : IAsyncDisposable
 	{
 		private readonly Lazy<Task<IJSObjectReference>> moduleTask;
 
-		public ExampleJsInteropFeatureModule(IJSRuntime jsRuntime)
+		public ExampleJsInterop(IJSRuntime jsRuntime)
 		{
 			moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-				"import", "./_content/FeatureModule/exampleJsInteropFeatureModule.js").AsTask());
+				"import", "./_content/FeatureModule/exampleJsInterop.js").AsTask());
 		}
 
 		/// <summary>
