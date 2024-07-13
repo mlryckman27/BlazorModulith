@@ -11,5 +11,6 @@
 	},
 	"sourceName": "BlazorModulith.MainShell",
 	"preferNameDirectory": true,
-	"icon": ".template.config/icon.png"
+	"icon": ".template.config/icon.png",
+    "description": "Modulith solution for a .NET 8 Blazor web application."
 }

@@ -11,5 +11,6 @@
 	},
 	"sourceName": "FeatureModule",
 	"preferNameDirectory": true,
-	"icon": ".template.config/icon.png"
+	"icon": ".template.config/icon.png",
+	"description": "Feature module project to be used with an existing Blazor Modulith solution."
 }
