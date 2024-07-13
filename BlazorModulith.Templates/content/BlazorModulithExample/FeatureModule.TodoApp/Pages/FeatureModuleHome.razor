@@ -1,0 +1,43 @@
+﻿@page "/featuremodule/home"
+
+@using FeatureModule.TodoApp.Services
+@using CoreLibrary.Services
+
+<h3>FeatureModuleHome</h3>
+
+@if (_todoItems is null)
+{
+	<p><em>Loading...</em></p>
+}
+else
+{
+	@foreach (var item in _todoItems)
+	{
+		<TodoItemCard Title="@item.Title"
+					  Description="@item.Description"
+					  DueDate="@item.DueDate"
+					  IsCompleted="@item.IsCompleted"/>
+	}	
+}
+
+@code {
+	[Inject]
+	public TodoItemService TodoItemService { get; set; }
+
+	[Inject]
+	public LoggingService LoggingService { get; set; }
+
+	private TodoItem[]? _todoItems;
+
+	protected override async Task OnInitializedAsync()
+	{
+		try
+		{
+			_todoItems = await TodoItemService.GetTodoItems();
+		}
+		catch (Exception ex)
+		{
+			LoggingService.LogToConsole(ex.Message);
+		}
+	}
+}

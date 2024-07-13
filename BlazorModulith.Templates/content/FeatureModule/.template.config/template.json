@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json.schemastore.org/template",
+	"author": "Matt Ryckman",
+	"classifications": [ "Razor Class Library", "Feature Module" ],
+	"identity": "Feature Module",
+	"name": "Feature Module",
+	"shortName": "featuremodule",
+	"tags": {
+		"language": "C#",
+		"type": "project"
+	},
+	"sourceName": "FeatureModule",
+	"preferNameDirectory": true,
+	"icon": ".template.config/icon.png"
+}

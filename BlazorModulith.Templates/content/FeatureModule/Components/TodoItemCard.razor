@@ -1,0 +1,20 @@
+﻿<div class="todo-item-card">
+	<h3>@Title</h3>
+	<p>Description: @Description</p>
+	<p>Due Date: @DueDate.ToShortDateString()</p>
+	<p><input type="checkbox" checked="@IsCompleted" /> Is Completed</p>
+</div>
+
+@code {
+	[Parameter]
+	public string? Title { get; set; }
+
+	[Parameter]
+	public string? Description { get; set; }
+
+	[Parameter]
+	public DateTime DueDate { get; set; }
+
+	[Parameter]
+	public bool IsCompleted { get; set; }
+}
