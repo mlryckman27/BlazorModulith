@@ -1,11 +1,11 @@
-# FeatureModule
+# Blazor Modulith
 
-This is a feature module for the Blazor Modular Monolith solution.
+This is a feature module for the Blazor Modulith solution.
 
 ## Setup
+To setup a new Feature Module in your Blazor Modulith solution, follow the steps below.
 
 The setup assumes you have an existing Blazor WASM project inside your solution called MainShell.
-To set up the FeatureModule project inside the Blazor Modular Monolith solution, follow these steps:
 
 1. Add a new project reference to the FeatureModule project in the MainShell project.
 2. Update the MainShell project's App.razor file to include the FeatureModule Assembly:
@@ -52,4 +52,4 @@ To set up the FeatureModule project inside the Blazor Modular Monolith solution,
 
 ## License
 
-The FeatureModule project is licensed under the [MIT License](LICENSE).
+The Blazor Modulith project is licensed under the [MIT License](LICENSE).
