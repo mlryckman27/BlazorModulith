@@ -4,12 +4,12 @@
     <!-- The package metadata. Fill in the properties marked as TODO below -->
     <!-- Follow the instructions on https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
     <PackageId>BlazorModulith.Templates</PackageId>
-    <PackageVersion>1.0</PackageVersion>
+    <PackageVersion>0.1</PackageVersion>
     <Title>Blazor Modulith</Title>
-    <Authors>thunderisland</Authors>
+    <Authors>Matt Ryckman, thunderisland.io</Authors>
     <Description>Modulith project and solution templates for .NET Blazor web applications.</Description>
     <PackageTags>Blazor, Modulith, Modular, Monolith</PackageTags>
-    <PackageProjectUrl>https://thunderisland.io</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/mlryckman27/BlazorModulith</PackageProjectUrl>
 
     <!-- Keep package type as 'Template' to show the package as a template package on nuget.org and make your template available in dotnet new search.-->
     <PackageType>Template</PackageType>
