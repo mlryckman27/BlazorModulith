@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreLibrary\CoreLibrary.csproj" />
+    <ProjectReference Include="..\BlazorModulith.CoreLibrary\BlazorModulith.CoreLibrary.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json.schemastore.org/template",
 	"author": "Matt Ryckman",
-	"classifications": [ "Blazor", "Razor Class Library", "Blazor Modulith" ],
+	"classifications": ["Blazor Modulith", "Blazor", "Modulith"],
 	"identity": "Blazor Modulith",
 	"name": "Blazor Modulith",
 	"shortName": "blazormodulith",
@@ -9,7 +9,7 @@
 		"language": "C#",
 		"type": "solution"
 	},
-	"sourceName": "BlazorMoMo",
+	"sourceName": "BlazorModulith.MainShell",
 	"preferNameDirectory": true,
 	"icon": ".template.config/icon.png"
 }

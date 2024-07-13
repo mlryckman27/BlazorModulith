@@ -1,9 +1,9 @@
 ﻿@page "/featuremodule/home"
 
 @using FeatureModule.TodoApp.Services
-@using CoreLibrary.Services
+@using BlazorModulith.CoreLibrary.Services
 
-<h3>FeatureModuleHome</h3>
+<h3>Todo App</h3>
 
 @if (_todoItems is null)
 {
@@ -25,7 +25,7 @@ else
 	public TodoItemService TodoItemService { get; set; }
 
 	[Inject]
-	public LoggingService LoggingService { get; set; }
+	public ILoggingService LoggingService { get; set; }
 
 	private TodoItem[]? _todoItems;
 
@@ -37,7 +37,7 @@ else
 		}
 		catch (Exception ex)
 		{
-			LoggingService.LogToConsole(ex.Message);
+			LoggingService.LogMessage(ex);
 		}
 	}
 }
